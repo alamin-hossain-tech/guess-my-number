@@ -126,6 +126,7 @@ h1 {
     flex-direction: column-reverse;
     padding-top: 280px;
     gap: 30px;
+    padding-bottom: 80px;
   }
 
   .right {
