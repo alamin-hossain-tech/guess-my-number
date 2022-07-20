@@ -21,8 +21,14 @@ body {
 /* LAYOUT */
 header {
   position: relative;
-  height: 35vh;
+  height: 60vh;
   border-bottom: 7px solid #eee;
+}
+.header-top-element {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 main {
@@ -71,15 +77,9 @@ h1 {
 
 .between {
   font-size: 1.4rem;
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
 }
 
 .again {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
 }
 
 .guess {
@@ -117,3 +117,27 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+@media (max-width: 900px) {
+  header {
+    height: 100vh;
+  }
+  main {
+    flex-direction: column-reverse;
+    padding-top: 280px;
+    gap: 30px;
+  }
+
+  .right {
+    text-align: center;
+  }
+  .message {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .header-top-element {
+    flex-direction: column;
+    gap: 40px;
+  }
+} ;
